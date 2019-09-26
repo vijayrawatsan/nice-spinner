@@ -149,6 +149,7 @@ public class NiceSpinner extends AppCompatTextView {
         setBackgroundResource(backgroundSelector);
         textColor = typedArray.getColor(R.styleable.NiceSpinner_textTint, getDefaultTextColor(context));
         setTextColor(textColor);
+        setBackgroundColor(Color.parseColor("#636161"))
         popupWindow = new ListPopupWindow(context);
         popupWindow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
